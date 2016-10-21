@@ -1,13 +1,19 @@
 ﻿{
-  "version": "1.0.0-1",
+	"version": "1.0.0-*",
 
 	"dependencies": {
 		"Autofac": "4.1.1",
-		"Microsoft.Azure.WebJobs": "1.1.2" 
+		"Microsoft.Azure.WebJobs": "1.1.2"
 	},
 
-  "frameworks": {
-    "net452": {
-    }
-  }
+	"frameworks": {
+		"net452": {
+		}
+	},
+
+	"scripts": {
+		"postcompile": [
+			"dotnet pack --no-build --configuration %compile:Configuration%"
+		]
+	}
 }

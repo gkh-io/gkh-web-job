@@ -1,1 +1,1 @@
-#Helpers for web job creation
+#Helpers for web job on dotnet.core platform
